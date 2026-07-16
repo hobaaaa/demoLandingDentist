@@ -40,7 +40,7 @@ export function HeroSection() {
     <section id="hero" className="relative overflow-hidden bg-[#f6fbfa]">
       <div className="absolute inset-x-0 top-0 h-40 bg-white" />
       <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-12 md:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-6 lg:py-20">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" data-reveal="left">
           <p className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-[#cfe5e1] bg-white px-4 py-2 text-sm font-semibold text-[#0f5f5c] shadow-sm">
             <Star className="h-4 w-4 fill-[#d9a441] text-[#d9a441]" />
             Denizli merkezli premium diş hekimliği deneyimi
@@ -64,7 +64,7 @@ export function HeroSection() {
               Tedavileri İncele
             </a>
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4" data-reveal-stagger>
             {trustItems.map((item) => (
               <div
                 key={item}
@@ -77,7 +77,7 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative min-h-[480px] lg:min-h-[660px]">
-          <div className="absolute left-0 top-8 z-10 hidden w-44 rounded-3xl border border-white/80 bg-white/90 p-4 shadow-2xl backdrop-blur md:block">
+          <div className="float-soft absolute left-0 top-8 z-10 hidden w-44 rounded-3xl border border-white/80 bg-white/90 p-4 shadow-2xl backdrop-blur md:block">
             <p className="text-3xl font-bold text-[#13233a]">4.9</p>
             <p className="mt-1 text-sm text-[#5a6d6b]">Hasta memnuniyeti</p>
             <div className="mt-3 flex text-[#d9a441]">
@@ -86,12 +86,15 @@ export function HeroSection() {
               ))}
             </div>
           </div>
-          <div className="absolute bottom-8 right-0 z-10 hidden max-w-64 rounded-3xl bg-[#13233a] p-5 text-white shadow-2xl md:block">
+          <div className="float-soft absolute bottom-8 right-0 z-10 hidden max-w-64 rounded-3xl bg-[#13233a] p-5 text-white shadow-2xl md:block [animation-delay:1.2s]">
             <p className="text-sm text-[#bfe8e2]">Bugün uygun saat</p>
             <p className="mt-1 text-lg font-semibold">17:30 Muayene</p>
             <p className="mt-3 text-sm text-white/70">Demo randevu alanı</p>
           </div>
-          <div className="relative ml-auto h-full overflow-hidden rounded-[2.4rem] bg-[#dce8e6] shadow-[0_34px_90px_rgba(19,35,58,0.18)]">
+          <div
+            className="relative ml-auto h-full overflow-hidden rounded-[2.4rem] bg-[#dce8e6] shadow-[0_34px_90px_rgba(19,35,58,0.18)]"
+            data-reveal="right"
+          >
             <Image
               src={heroImage}
               alt="Modern bir klinikte diş hekimi ve hasta görüşmesi"
@@ -110,7 +113,10 @@ export function HeroSection() {
 export function StatsSection() {
   return (
     <section className="bg-white py-10">
-      <div className="mx-auto grid max-w-7xl gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
+      <div
+        className="mx-auto grid max-w-7xl gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-6"
+        data-reveal-stagger
+      >
         {stats.map((item) => (
           <div
             key={item.label}
@@ -131,7 +137,7 @@ export function AboutSection() {
   return (
     <section id="hakkimizda" className="bg-white py-20">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-6">
-        <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]">
+        <div className="relative min-h-[420px] overflow-hidden rounded-[2rem]" data-reveal="left">
           <Image
             src={clinicImage}
             alt="Modern ve ferah diş kliniği ortamı"
@@ -140,13 +146,13 @@ export function AboutSection() {
             className="object-cover"
           />
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" data-reveal="right">
           <SectionIntro
             eyebrow="Hakkımızda"
             title="Tedaviden önce güvenli ve konforlu bir deneyim tasarlıyoruz."
             description="Liva Dental Clinic olarak yalnızca diş tedavisi değil, güvenli ve konforlu bir tedavi deneyimi sunuyoruz."
           />
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2" data-reveal-stagger>
             {[
               "Modern klinik ortamı",
               "Uzman hekim kadrosu",
@@ -186,11 +192,12 @@ export function TreatmentsSection() {
           <a
             className={buttonClassName({ variant: "secondary", size: "md" })}
             href="#iletisim"
+            data-reveal="right"
           >
             Tedavi danışmanlığı al
           </a>
         </div>
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4" data-reveal-stagger>
           {treatments.map((item, index) => {
             const Icon = item.icon;
             return (
@@ -240,7 +247,7 @@ export function ReasonsSection() {
           title="Hasta güvenini artıran her detay görünür olsun."
           description="Demo site, kliniğin hizmet kalitesini yalnızca anlatmaz; düzenli bilgi mimarisiyle hissettirir."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3" data-reveal-stagger>
           {reasons.map((item) => {
             const Icon = item.icon;
             return (
@@ -273,7 +280,7 @@ export function DoctorsSection() {
           title="Güven veren uzmanlık profilleri."
           description="Örnek doktor kartları, gerçek bir kliniğin ekip sayfası gibi tutarlı ve profesyonel görünür."
         />
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-3" data-reveal-stagger>
           {doctors.map((doctor) => (
             <article
               key={doctor.name}
@@ -315,7 +322,7 @@ export function ProcessSection() {
           title="Belirsizliği azaltan açık ve sakin bir yol haritası."
           description="Hastalar hangi adımda ne olacağını gördüğünde randevu alma eşiği düşer."
         />
-        <div className="mt-10 grid gap-5 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 lg:grid-cols-4" data-reveal-stagger>
           {processSteps.map((step, index) => (
             <div key={step.title} className="relative rounded-3xl bg-[#13233a] p-6 text-white">
               <span className="text-sm font-semibold text-[#9fd7cf]">
@@ -342,7 +349,7 @@ export function TestimonialsSection() {
           title="Abartısız, doğal ve güven veren deneyimler."
           description="Kısa hasta yorumları, reklam dili yerine gerçekçi karar destek noktaları sunar."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4" data-reveal-stagger>
           {testimonials.map((item) => (
             <article key={item.name} className="rounded-3xl bg-white p-6 shadow-sm">
               <Quote className="h-8 w-8 text-[#0f5f5c]" />
@@ -367,7 +374,7 @@ export function SmileDesignSection() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-6">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center" data-reveal="left">
           <SectionIntro
             eyebrow="Gülüş tasarımı"
             title="Gülüş tasarımında doğal sonuçlar"
@@ -378,7 +385,7 @@ export function SmileDesignSection() {
             hazırlanabilecek estetik vaka anlatımının görsel düzenini gösterir.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
           {[
             { label: "Planlama", src: smileBeforeImage },
             { label: "Hedef görünüm", src: smileAfterImage },
@@ -417,6 +424,7 @@ export function FaqSection() {
           type="single"
           collapsible
           className="rounded-3xl border border-[#dce8e6] bg-white px-6"
+          data-reveal="right"
         >
           {faqs.map((faq, index) => (
             <AccordionItem key={faq.question} value={`item-${index}`}>
@@ -434,7 +442,10 @@ export function CtaSection() {
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-6">
-        <div className="overflow-hidden rounded-[2rem] bg-[#13233a] px-6 py-12 text-white md:px-10 lg:px-14">
+        <div
+          className="pulse-soft overflow-hidden rounded-[2rem] bg-[#13233a] px-6 py-12 text-white md:px-10 lg:px-14"
+          data-reveal="scale"
+        >
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#9fd7cf]">
@@ -476,7 +487,7 @@ export function ContactSection() {
           description="Telefon, WhatsApp, form ve harita alanı tek bölümde toplanarak ziyaretçinin karar anı desteklenir."
         />
         <div className="mt-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-5">
+          <div className="space-y-5" data-reveal-stagger>
             <InfoCard icon={MapPin} title="Adres" text={brand.address} />
             <InfoCard icon={Phone} title="Telefon" text={brand.phone} href={brand.phoneHref} />
             <InfoCard icon={Mail} title="E-posta" text={brand.email} href={`mailto:${brand.email}`} />
@@ -493,7 +504,9 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-          <ContactForm />
+          <div data-reveal="right">
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>
@@ -536,7 +549,7 @@ function SectionIntro({
   description: string;
 }) {
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-3xl" data-reveal>
       <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0f5f5c]">
         {eyebrow}
       </p>

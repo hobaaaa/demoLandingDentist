@@ -44,6 +44,87 @@ a {
   text-decoration: none;
 }
 
+[data-reveal],
+[data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 250ms ease,
+    border-color 250ms ease,
+    background-color 250ms ease;
+  will-change: opacity, transform;
+}
+
+[data-reveal="left"] {
+  transform: translate3d(-28px, 0, 0);
+}
+
+[data-reveal="right"] {
+  transform: translate3d(28px, 0, 0);
+}
+
+[data-reveal="scale"] {
+  transform: translate3d(0, 24px, 0) scale(0.96);
+}
+
+[data-reveal].is-visible,
+[data-reveal-stagger].is-visible > * {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+[data-reveal-stagger].is-visible > :nth-child(2) {
+  transition-delay: 90ms;
+}
+
+[data-reveal-stagger].is-visible > :nth-child(3) {
+  transition-delay: 180ms;
+}
+
+[data-reveal-stagger].is-visible > :nth-child(4) {
+  transition-delay: 270ms;
+}
+
+[data-reveal-stagger].is-visible > :nth-child(5) {
+  transition-delay: 360ms;
+}
+
+[data-reveal-stagger].is-visible > :nth-child(6) {
+  transition-delay: 450ms;
+}
+
+.float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulse-soft 2.8s ease-in-out infinite;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    box-shadow: 0 24px 70px rgba(15, 95, 92, 0.16);
+  }
+
+  50% {
+    box-shadow: 0 30px 90px rgba(15, 95, 92, 0.26);
+  }
+}
+
 button,
 input,
 select,
@@ -61,7 +142,9 @@ textarea {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+    opacity: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+    transform: none !important;
   }
 }

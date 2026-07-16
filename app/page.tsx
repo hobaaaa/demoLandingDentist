@@ -15,6 +15,7 @@ import {
 import { FloatingActions } from "@/components/layout/floating-actions";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { RevealObserver } from "@/components/ui/reveal-observer";
 import { brand } from "@/data/site";
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <RevealObserver />
       <Header />
       <main>
         <HeroSection />

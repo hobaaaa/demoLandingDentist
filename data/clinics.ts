@@ -149,6 +149,82 @@ export const clinics = {
     seoDescription:
       "Alp Diş Kliniği için hazırlanmış kişiselleştirilmiş diş kliniği demo sayfası.",
   },
+  "mustafa-resul-basgun": {
+    slug: "mustafa-resul-basgun",
+    clinicName: "Dt. Mustafa Resul Başgün",
+    doctorName: "Dt. Mustafa Resul Başgün",
+    title: "Denizli'de güven veren, modern ve estetik diş hekimliği deneyimi",
+    description:
+      "Dt. Mustafa Resul Başgün için hazırlanan bu demo sayfası; hastaların adres, telefon, hizmetler ve randevu aksiyonlarına hızlıca ulaşabileceği premium bir klinik sunumu sağlar.",
+    phone: "+90 531 575 83 32",
+    whatsapp: "+90 531 575 83 32",
+    email: "iletisim@mustafaresulbasgun.com",
+    address:
+      "Sırakapılar, Selçuk Cd. No:37, 20010, 20040 Denizli Merkezefendi/Denizli",
+    instagramUrl: "https://www.instagram.com/",
+    mapsUrl:
+      "https://maps.google.com/?q=S%C4%B1rakap%C4%B1lar%20Sel%C3%A7uk%20Cd.%20No%3A37%20Merkezefendi%20Denizli",
+    logo: "/demos/mustafa-resul-basgun/logo.png",
+    heroImage:
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=85",
+    aboutImage:
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85",
+    doctorImage:
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85",
+    primaryColor: "#075a88",
+    secondaryColor: "#eef7fb",
+    services: [
+      {
+        title: "Estetik Diş Hekimliği",
+        description:
+          "Gülüş estetiğini destekleyen doğal görünümlü restorasyon ve bakım planlamaları.",
+      },
+      {
+        title: "Diş Beyazlatma",
+        description:
+          "Daha aydınlık bir gülüş için kontrollü, güvenli ve klinik ortamında uygulanan beyazlatma işlemleri.",
+      },
+      {
+        title: "İmplant Danışmanlığı",
+        description:
+          "Eksik dişler için muayene, görüntüleme ve kişiye uygun tedavi seçeneklerinin değerlendirilmesi.",
+      },
+      {
+        title: "Rutin Muayene ve Bakım",
+        description:
+          "Düzenli kontrol, diş taşı temizliği ve koruyucu ağız-diş sağlığı takibi.",
+      },
+    ],
+    aboutText:
+      "Denizli Merkezefendi'de yer alan bu demo klinik sayfası; adres, telefon ve randevu aksiyonlarını görünür tutan, hastanın güvenle karar vermesini kolaylaştıran sade ve premium bir yapı ile hazırlandı.",
+    doctorBiography:
+      "Dt. Mustafa Resul Başgün için hazırlanan bu demo profil, modern diş hekimliği yaklaşımını, hasta bilgilendirmesini ve konforlu randevu deneyimini öne çıkarır.",
+    testimonials: [
+      {
+        name: "Hasta Yorumu",
+        comment:
+          "Muayene öncesinde adres ve iletişim bilgilerine kolayca ulaşmak güven verdi. Randevu aksiyonları çok netti.",
+      },
+      {
+        name: "Denizli Hastası",
+        comment:
+          "Sayfa sade, hızlı ve mobilde rahat okunuyor. Hizmetler ve doktor bilgisi karar vermeyi kolaylaştırıyor.",
+      },
+      {
+        name: "Örnek Yorum",
+        comment:
+          "Klinik bilgileri profesyonel görünüyor. Telefon ve WhatsApp bağlantıları hızlı iletişim için yeterli.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "09:00 - 18:00" },
+      { day: "Cumartesi", hours: "10:00 - 15:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    seoTitle: "Dt. Mustafa Resul Başgün Demo Web Sitesi",
+    seoDescription:
+      "Dt. Mustafa Resul Başgün için hazırlanmış kişiselleştirilmiş diş hekimliği demo sayfası.",
+  },
 } satisfies Record<string, ClinicDemo>;
 
 export type ClinicSlug = keyof typeof clinics;

@@ -169,8 +169,7 @@ export const clinics = {
       "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=85",
     aboutImage:
       "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=85",
-    doctorImage:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85",
+    doctorImage: "/demos/mustafa-resul-basgun/doctor.png",
     primaryColor: "#075a88",
     secondaryColor: "#eef7fb",
     services: [

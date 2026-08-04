@@ -10,7 +10,7 @@ export const clinics = {
       "Randevu odaklı, mobil uyumlu ve premium bir diş kliniği web sitesi demosu. Hastalarınız ihtiyaç duyduğu bilgiye hızla ulaşır ve kolayca iletişime geçer.",
     phone: "+90 555 111 22 33",
     whatsapp: "+90 555 111 22 33",
-    email: "demo@dgdigital.com.tr",
+    email: "demo@denizgokbudak.com",
     address: "Atatürk Mah. Sağlık Cad. No:12, İstanbul",
     instagramUrl: "https://www.instagram.com/",
     mapsUrl: "https://maps.google.com/?q=Istanbul",

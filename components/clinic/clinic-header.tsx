@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Clock, MapPin, Menu, Phone, X } from "lucide-react";
 import type { ClinicDemo } from "@/types/clinic";
+import { DEMO_BOOKING_URL } from "@/lib/booking";
 import { createTelHref } from "@/lib/contact";
 
 type ClinicHeaderProps = {
@@ -112,7 +113,9 @@ export function ClinicHeader({ clinic, logo }: ClinicHeaderProps) {
 
         <a
           className="premium-button hidden h-12 items-center justify-center rounded-full bg-[var(--clinic-primary)] px-6 text-sm font-semibold text-white shadow-[0_16px_38px_rgba(15,95,92,0.24)] lg:inline-flex"
-          href="#iletisim"
+          href={DEMO_BOOKING_URL}
+          target="_blank"
+          rel="noreferrer"
         >
           <span>Randevu Al</span>
         </a>
@@ -146,7 +149,9 @@ export function ClinicHeader({ clinic, logo }: ClinicHeaderProps) {
               </a>
             ))}
             <a
-              href="#iletisim"
+              href={DEMO_BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="premium-button mt-2 inline-flex h-14 w-full items-center justify-center rounded-full bg-[var(--clinic-primary)] px-7 text-base font-semibold text-white"
             >

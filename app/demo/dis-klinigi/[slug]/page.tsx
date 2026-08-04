@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { clinics, getClinicBySlug } from "@/data/clinics";
 import { ClinicDemoPage } from "@/components/clinic/clinic-demo";
+import { clinics, getClinicBySlug } from "@/data/clinics";
 
-type DemoPageProps = {
+type DentalDemoPageProps = {
   params: Promise<{
     slug: string;
   }>;
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: DemoPageProps): Promise<Metadata> {
+}: DentalDemoPageProps): Promise<Metadata> {
   const { slug } = await params;
   const clinic = getClinicBySlug(slug);
 
@@ -46,7 +46,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function DemoPage({ params }: DemoPageProps) {
+export default async function DentalDemoPage({ params }: DentalDemoPageProps) {
   const { slug } = await params;
   const clinic = getClinicBySlug(slug);
 

@@ -1,6 +1,7 @@
 import type React from "react";
 import { CalendarCheck, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import type { ClinicDemo } from "@/types/clinic";
+import { DEMO_BOOKING_URL } from "@/lib/booking";
 import { createTelHref, createWhatsAppHref } from "@/lib/contact";
 
 type ClinicContactProps = {
@@ -38,7 +39,9 @@ export function ClinicContact({ clinic }: ClinicContactProps) {
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
                   className="premium-button inline-flex h-14 items-center justify-center rounded-full bg-[var(--clinic-primary)] px-7 text-base font-semibold text-white"
-                  href="#iletisim"
+                  href={DEMO_BOOKING_URL}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   <span>Randevu Oluştur</span>
                 </a>
@@ -78,12 +81,13 @@ export function ClinicContact({ clinic }: ClinicContactProps) {
                   title="E-posta"
                   text={clinic.email}
                   href={`mailto:${clinic.email}`}
+                  textClassName="break-all"
                 />
               ) : null}
               <InfoCard
                 icon={Clock}
                 title="Çalışma saatleri"
-                text={clinic.workingHours.map((item) => `${item.day}: ${item.hours}`).join(" / ")}
+                text={<WorkingHoursList hours={clinic.workingHours} />}
               />
             </div>
             <div
@@ -123,7 +127,9 @@ export function ClinicContact({ clinic }: ClinicContactProps) {
 
       <div className="fixed inset-x-4 bottom-4 z-40 grid grid-cols-[1fr_auto] gap-3 md:inset-auto md:bottom-6 md:right-6 md:flex md:flex-col">
         <a
-          href="#iletisim"
+          href={DEMO_BOOKING_URL}
+          target="_blank"
+          rel="noreferrer"
           className="premium-button inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#13233a] px-5 text-sm font-semibold text-white shadow-2xl shadow-[#13233a]/25 md:hidden"
         >
           <CalendarCheck className="h-5 w-5" />
@@ -148,20 +154,24 @@ function InfoCard({
   title,
   text,
   href,
+  textClassName,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
-  text: string;
+  text: React.ReactNode;
   href?: string;
+  textClassName?: string;
 }) {
   const content = (
-    <div className="premium-card flex gap-4 rounded-3xl border border-[#dce8e6] bg-white p-5 shadow-sm">
+    <div className="premium-card flex min-w-0 gap-4 rounded-3xl border border-[#dce8e6] bg-white p-5 shadow-sm">
       <span className="premium-card-icon grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-[var(--clinic-secondary)] text-[var(--clinic-primary)]">
         <Icon className="h-6 w-6" />
       </span>
-      <div>
+      <div className="min-w-0">
         <p className="text-sm font-semibold text-[#6a7c79]">{title}</p>
-        <p className="mt-1 font-bold text-[#13233a]">{text}</p>
+        <div className={`mt-1 font-bold leading-7 text-[#13233a] ${textClassName ?? ""}`}>
+          {text}
+        </div>
       </div>
     </div>
   );
@@ -172,5 +182,22 @@ function InfoCard({
     </a>
   ) : (
     content
+  );
+}
+
+function WorkingHoursList({
+  hours,
+}: {
+  hours: ClinicDemo["workingHours"];
+}) {
+  return (
+    <ul className="space-y-1">
+      {hours.map((item) => (
+        <li key={item.day} className="grid gap-1 text-sm leading-6 sm:grid-cols-[1fr_auto]">
+          <span className="font-semibold text-[#13233a]">{item.day}</span>
+          <span className="font-semibold text-[#5a6d6b] sm:text-right">{item.hours}</span>
+        </li>
+      ))}
+    </ul>
   );
 }

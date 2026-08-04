@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BadgeCheck, CalendarCheck, Camera, ShieldCheck } from "lucide-react";
 import type { ClinicDemo } from "@/types/clinic";
+import { DEMO_BOOKING_URL } from "@/lib/booking";
 import { getClinicImage } from "@/lib/images";
 
 type ClinicDoctorProps = {
@@ -47,7 +48,9 @@ export function ClinicDoctor({ clinic }: ClinicDoctorProps) {
               {clinic.doctorBiography}
             </p>
             <a
-              href="#iletisim"
+              href={DEMO_BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
               className="premium-button mt-8 inline-flex h-14 w-fit items-center justify-center rounded-full bg-[var(--clinic-primary)] px-7 text-base font-semibold text-white shadow-[0_16px_38px_rgba(15,95,92,0.24)]"
             >
               <span>Muayene Randevusu Al</span>

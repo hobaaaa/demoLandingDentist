@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Check, Phone, Star } from "lucide-react";
 import type { ClinicDemo } from "@/types/clinic";
+import { DEMO_BOOKING_URL } from "@/lib/booking";
 import { createTelHref, createWhatsAppHref } from "@/lib/contact";
 import { getClinicImage } from "@/lib/images";
 
@@ -32,7 +33,9 @@ export function ClinicHero({ clinic }: ClinicHeroProps) {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#iletisim"
+              href={DEMO_BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
               className="premium-button group inline-flex h-14 items-center justify-center gap-2 rounded-full bg-[var(--clinic-primary)] px-7 text-base font-semibold text-white shadow-[0_16px_38px_rgba(15,95,92,0.24)]"
             >
               <span>Randevu Al</span>

@@ -153,6 +153,81 @@ export const psychologists = {
     seoDescription:
       "Elif Yıldız için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
+  "sultan-dailli": {
+    slug: "sultan-dailli",
+    practiceName: "Sultan Dailli Psikoloji",
+    psychologistName: "Psk. Sultan Dailli",
+    title: "Sakin, güvenli ve kişiye özel psikolojik danışmanlık alanı",
+    description:
+      "Sultan Dailli için hazırlanan bu demo; danışanların çalışma alanlarını incelemesini, uzmanı tanımasını ve randevu adımına kolayca geçmesini sağlar.",
+    phone: "+90 543 226 96 05",
+    whatsapp: "+90 543 226 96 05",
+    email: "demo@denizgokbudak.com",
+    address: "Kınıklı, 6108. Sk. No:6 kat 1, 20190 Pamukkale/Denizli",
+    instagramUrl: "https://www.instagram.com/",
+    mapsUrl:
+      "https://maps.google.com/?q=K%C4%B1n%C4%B1kl%C4%B1%2C%206108.%20Sk.%20No%3A6%20kat%201%2C%2020190%20Pamukkale%2FDenizli",
+    logo: "/demos/sultan-dailli/logo.png",
+    heroImage: "/demos/sultan-dailli/profile.webp",
+    officeImage:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    profileImage: "/demos/sultan-dailli/profile.webp",
+    primaryColor: "#425447",
+    secondaryColor: "#eef4ec",
+    accentColor: "#b59a7a",
+    therapyAreas: [
+      {
+        title: "Bireysel Danışmanlık",
+        description:
+          "Duygusal zorlanmalar, yaşam geçişleri ve kişisel farkındalık süreçleri için güvenli görüşme alanı.",
+      },
+      {
+        title: "Kaygı ve Stres",
+        description:
+          "Gündelik yaşamı zorlaştıran kaygı ve stres döngülerini anlamaya yönelik yapılandırılmış destek.",
+      },
+      {
+        title: "İlişki Süreçleri",
+        description:
+          "İletişim, sınırlar ve tekrar eden ilişki kalıpları üzerine sakin ve anlaşılır bir çalışma süreci.",
+      },
+      {
+        title: "Online Görüşme",
+        description:
+          "Yoğun programlara uyum sağlayan, gizlilik ve süreklilik odağıyla online danışmanlık seçeneği.",
+      },
+    ],
+    approachText:
+      "Danışanın ihtiyaçlarını, sınırlarını ve yaşam ritmini gözeten; etik çerçeve, gizlilik ve güven duygusu üzerine kurulu bir danışmanlık yaklaşımı vurgulanır.",
+    biography:
+      "Psk. Sultan Dailli için hazırlanan bu demo profil alanı; uzmanın çalışma yaklaşımını, danışanla kurduğu profesyonel çerçeveyi ve görüşme sürecinin nasıl ilerlediğini anlatmak için düzenlenmiştir.",
+    testimonials: [
+      {
+        name: "Danışan Yorumu",
+        comment:
+          "Sayfada süreç, iletişim ve randevu adımları çok net görünüyor. Sade ve güven veren bir izlenim oluşturuyor.",
+      },
+      {
+        name: "Örnek Danışan",
+        comment:
+          "Çalışma alanlarını ve görüşme seçeneklerini hızlıca görmek karar vermeyi kolaylaştırıyor.",
+      },
+      {
+        name: "Online Görüşme",
+        comment:
+          "Mobilde rahat okunuyor ve iletişim aksiyonlarına kolayca ulaşılabiliyor.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "10:00 - 19:00" },
+      { day: "Cumartesi", hours: "10:00 - 14:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    sessionTypes: ["Bireysel danışmanlık", "Online görüşme", "Ön görüşme"],
+    seoTitle: "Sultan Dailli Psikolog Demo Web Sitesi",
+    seoDescription:
+      "Sultan Dailli için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
+  },
 } satisfies Record<string, PsychologistDemo>;
 
 export type PsychologistSlug = keyof typeof psychologists;

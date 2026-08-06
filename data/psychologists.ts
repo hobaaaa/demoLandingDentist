@@ -1,5 +1,7 @@
 import type { PsychologistDemo } from "@/types/psychologist";
 
+const psychologyHeroImage = "/demos/psychology/hero.jpg";
+
 export const psychologists = {
   genel: {
     slug: "genel",
@@ -15,8 +17,7 @@ export const psychologists = {
     instagramUrl: "https://www.instagram.com/",
     mapsUrl: "https://maps.google.com/?q=Istanbul",
     logo: "/demos/default/logo.png",
-    heroImage:
-      "https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=1600&q=85",
+    heroImage: psychologyHeroImage,
     officeImage:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
     profileImage:
@@ -91,8 +92,7 @@ export const psychologists = {
     instagramUrl: "https://www.instagram.com/",
     mapsUrl: "https://maps.google.com/?q=Izmir",
     logo: "/demos/default/logo.png",
-    heroImage:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=85",
+    heroImage: psychologyHeroImage,
     officeImage:
       "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=85",
     profileImage:
@@ -168,7 +168,7 @@ export const psychologists = {
     mapsUrl:
       "https://maps.google.com/?q=K%C4%B1n%C4%B1kl%C4%B1%2C%206108.%20Sk.%20No%3A6%20kat%201%2C%2020190%20Pamukkale%2FDenizli",
     logo: "/demos/sultan-dailli/logo.png",
-    heroImage: "/demos/sultan-dailli/profile.webp",
+    heroImage: psychologyHeroImage,
     officeImage:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
     profileImage: "/demos/sultan-dailli/profile.webp",

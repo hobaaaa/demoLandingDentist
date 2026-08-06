@@ -171,7 +171,6 @@ export const psychologists = {
     heroImage: psychologyHeroImage,
     officeImage:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
-    profileImage: "/demos/sultan-dailli/profile.webp",
     primaryColor: "#425447",
     secondaryColor: "#eef4ec",
     accentColor: "#b59a7a",

@@ -375,6 +375,79 @@ export const psychologists = {
     seoDescription:
       "Psk. Nigda Durmaz için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
+  "cansel-herken": {
+    slug: "cansel-herken",
+    practiceName: "Cansel Herken Psikolojik Danışmanlık",
+    psychologistName: "Psikolojik Danışman Cansel Herken",
+    title: "Sakin, güvenli ve anlaşılır psikolojik danışmanlık deneyimi",
+    description:
+      "Psikolojik Danışman Cansel Herken için hazırlanan bu demo; danışanların çalışma alanlarını incelemesini, iletişim bilgilerine ulaşmasını ve randevu adımına kolayca geçmesini sağlar.",
+    phone: "+90 551 130 57 78",
+    whatsapp: "+90 551 130 57 78",
+    email: "demo@denizgokbudak.com",
+    address: "Denizli / Pamukkale",
+    instagramUrl: "https://www.instagram.com/psk.dan.canselherken/",
+    mapsUrl: "https://maps.google.com/?q=Denizli%20Pamukkale",
+    logo: "/demos/cansel-herken/logo.png",
+    heroImage: psychologyHeroImage,
+    officeImage:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    primaryColor: "#4f5b46",
+    secondaryColor: "#f1f4ec",
+    accentColor: "#b4a07d",
+    therapyAreas: [
+      {
+        title: "Bireysel Danışmanlık",
+        description:
+          "Duygusal zorlanmalar, stres ve yaşam geçişleri için güvenli bir görüşme alanı.",
+      },
+      {
+        title: "Kaygı ve Stres",
+        description:
+          "Kaygı ve stres döngülerini anlamaya, düzenlemeye ve günlük yaşamı rahatlatmaya yönelik destek.",
+      },
+      {
+        title: "İlişki ve İletişim",
+        description:
+          "Sınırlar, iletişim ve tekrar eden ilişki kalıpları üzerine yapılandırılmış çalışma.",
+      },
+      {
+        title: "Online Görüşme",
+        description:
+          "Gizlilik ve süreklilik odağıyla online psikolojik danışmanlık seçeneği.",
+      },
+    ],
+    approachText:
+      "Danışanın ihtiyaçlarını, sınırlarını ve yaşam ritmini gözeten; güven, etik çerçeve ve anlaşılır süreç yönetimi üzerine kurulu bir yaklaşım öne çıkarılır.",
+    biography:
+      "Psikolojik Danışman Cansel Herken için hazırlanan bu demo profil alanı; uzmanın çalışma yaklaşımını, danışanla kurduğu profesyonel çerçeveyi ve görüşme sürecinin nasıl ilerlediğini anlatmak için düzenlenmiştir.",
+    testimonials: [
+      {
+        name: "Danışan Yorumu",
+        comment:
+          "Sayfa sade, güven veren ve iletişim adımlarını hızlıca görünür kılıyor.",
+      },
+      {
+        name: "Örnek Danışan",
+        comment:
+          "Çalışma alanları ve randevu aksiyonları net şekilde aktarılmış.",
+      },
+      {
+        name: "Online Görüşme",
+        comment:
+          "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "10:00 - 19:00" },
+      { day: "Cumartesi", hours: "10:00 - 14:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    sessionTypes: ["Bireysel danışmanlık", "Online görüşme", "Ön görüşme"],
+    seoTitle: "Cansel Herken Psikolog Demo Web Sitesi",
+    seoDescription:
+      "Psikolojik Danışman Cansel Herken için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
+  },
 } satisfies Record<string, PsychologistDemo>;
 
 export type PsychologistSlug = keyof typeof psychologists;

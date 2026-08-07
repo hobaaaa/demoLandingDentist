@@ -16,7 +16,6 @@ Yerel demo URL'leri:
 ```text
 http://localhost:3000/demo/genel
 http://localhost:3000/demo/dis-klinigi/genel
-http://localhost:3000/demo/alp-dis
 http://localhost:3000/demo/psikolog/genel
 http://localhost:3000/demo/psikolog/elif-yildiz
 ```
@@ -106,6 +105,8 @@ Randevu butonları tüm demo sektörlerinde merkezi olarak `lib/booking.ts` içi
 https://app.artexo.app/book/artexo-demo
 ```
 
+Demo arşivlemek için kayıt silinmez. `lib/archived-demos.ts` dosyasındaki ilgili listeye slug eklenir. Arşivlenen demo statik üretilmez ve doğrudan URL ile çağrıldığında `notFound()` döner. Tekrar canlıya almak için slug bu listeden kaldırılır.
+
 ## 4. Müşteriye özel görsel ekleme
 
 Her müşteri için `public/demos/[slug]/` altında ayrı klasör kullanılabilir.
@@ -137,7 +138,7 @@ Slug kısa, okunabilir ve URL uyumlu olmalıdır.
 İyi örnekler:
 
 ```text
-alp-dis
+yeni-klinik
 mehmet-klinik
 denizli-dental
 ```
@@ -167,7 +168,6 @@ DNS tarafında Vercel'in verdiği CNAME veya A kaydı eklenir. Subdomain bağlan
 ```text
 https://demo.denizgokbudak.com/demo/genel
 https://demo.denizgokbudak.com/demo/dis-klinigi/genel
-https://demo.denizgokbudak.com/demo/alp-dis
 https://demo.denizgokbudak.com/demo/psikolog/genel
 ```
 
@@ -175,13 +175,12 @@ https://demo.denizgokbudak.com/demo/psikolog/genel
 
 `/demo/genel` kişiye özel hazırlık yapılmadan önce paylaşılabilecek genel diş kliniği demosudur.
 
-`/demo/alp-dis` gibi slug'lar belirli bir müşteri için hazırlanmış kişiselleştirilmiş örnek sayfalardır. Bu sayfalarda marka rengi, görseller, doktor adı, iletişim bilgileri, hizmetler ve SEO bilgileri ayrı kayıt üzerinden gelir.
+Müşteriye özel slug'lar belirli bir müşteri için hazırlanmış kişiselleştirilmiş örnek sayfalardır. Bu sayfalarda marka rengi, görseller, doktor adı, iletişim bilgileri, hizmetler ve SEO bilgileri ayrı kayıt üzerinden gelir.
 
 Sektörlü yeni yapı:
 
 ```text
 /demo/dis-klinigi/genel
-/demo/dis-klinigi/alp-dis
 /demo/psikolog/genel
 /demo/psikolog/elif-yildiz
 ```

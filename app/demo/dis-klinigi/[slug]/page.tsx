@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ClinicDemoPage } from "@/components/clinic/clinic-demo";
 import { clinics, getClinicBySlug } from "@/data/clinics";
+import { isArchivedDentalDemo } from "@/lib/archived-demos";
 
 type DentalDemoPageProps = {
   params: Promise<{
@@ -10,9 +11,11 @@ type DentalDemoPageProps = {
 };
 
 export function generateStaticParams() {
-  return Object.values(clinics).map((clinic) => ({
-    slug: clinic.slug,
-  }));
+  return Object.values(clinics)
+    .filter((clinic) => !isArchivedDentalDemo(clinic.slug))
+    .map((clinic) => ({
+      slug: clinic.slug,
+    }));
 }
 
 export async function generateMetadata({
@@ -21,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const clinic = getClinicBySlug(slug);
 
-  if (!clinic) {
+  if (!clinic || isArchivedDentalDemo(slug)) {
     return {
       title: "Demo bulunamadı",
       robots: {
@@ -50,7 +53,7 @@ export default async function DentalDemoPage({ params }: DentalDemoPageProps) {
   const { slug } = await params;
   const clinic = getClinicBySlug(slug);
 
-  if (!clinic) {
+  if (!clinic || isArchivedDentalDemo(slug)) {
     notFound();
   }
 

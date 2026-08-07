@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PsychologistDemoPage } from "@/components/psychologist/psychologist-demo";
 import { getPsychologistBySlug, psychologists } from "@/data/psychologists";
+import { isArchivedPsychologistDemo } from "@/lib/archived-demos";
 
 type PsychologistDemoRouteProps = {
   params: Promise<{
@@ -10,9 +11,11 @@ type PsychologistDemoRouteProps = {
 };
 
 export function generateStaticParams() {
-  return Object.values(psychologists).map((demo) => ({
-    slug: demo.slug,
-  }));
+  return Object.values(psychologists)
+    .filter((demo) => !isArchivedPsychologistDemo(demo.slug))
+    .map((demo) => ({
+      slug: demo.slug,
+    }));
 }
 
 export async function generateMetadata({
@@ -21,7 +24,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const demo = getPsychologistBySlug(slug);
 
-  if (!demo) {
+  if (!demo || isArchivedPsychologistDemo(slug)) {
     return {
       title: "Demo bulunamadı",
       robots: {
@@ -52,7 +55,7 @@ export default async function PsychologistDemoRoute({
   const { slug } = await params;
   const demo = getPsychologistBySlug(slug);
 
-  if (!demo) {
+  if (!demo || isArchivedPsychologistDemo(slug)) {
     notFound();
   }
 

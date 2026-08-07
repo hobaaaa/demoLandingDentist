@@ -139,8 +139,7 @@ export const psychologists = {
       },
       {
         name: "D. Y.",
-        comment:
-          "Mobilde sade, profesyonel ve sakin bir deneyim sunuyor.",
+        comment: "Mobilde sade, profesyonel ve sakin bir deneyim sunuyor.",
       },
     ],
     workingHours: [
@@ -159,7 +158,7 @@ export const psychologists = {
     psychologistName: "Psk. Sultan Dailli",
     title: "Sakin, güvenli ve kişiye özel psikolojik danışmanlık alanı",
     description:
-      "Sultan Dailli için hazırlanan bu demo; danışanların çalışma alanlarını incelemesini, uzmanı tanımasını ve randevu adımına kolayca geçmesini sağlar.",
+      "Sultan Dailli için hazırlanan bu websitesi; danışanların çalışma alanlarını incelemesini, uzmanı tanımasını ve randevu adımına kolayca geçmesini sağlar.",
     phone: "+90 543 226 96 05",
     whatsapp: "+90 543 226 96 05",
     email: "demo@denizgokbudak.com",
@@ -226,6 +225,80 @@ export const psychologists = {
     seoTitle: "Sultan Dailli Psikolog Demo Web Sitesi",
     seoDescription:
       "Sultan Dailli için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
+  },
+  "hicran-ipek-celik": {
+    slug: "hicran-ipek-celik",
+    practiceName: "Hicran İpek Çelik Psikoloji",
+    psychologistName: "Uzm. Kl. Psk. Hicran İpek Çelik",
+    title: "Güven veren, sakin ve kişiye özel psikolojik danışmanlık alanı",
+    description:
+      "Uzm. Kl. Psk. Hicran İpek Çelik için hazırlanan bu demo; danışanların uzmanı tanımasını, çalışma alanlarını incelemesini ve randevu adımına kolayca geçmesini sağlar.",
+    phone: "+90 553 509 71 03",
+    whatsapp: "+90 553 509 71 03",
+    email: "demo@denizgokbudak.com",
+    address: "Kınıklı, 6108. Sk. No:6 Kat 1, 20190 Pamukkale/Denizli",
+    instagramUrl: "https://www.instagram.com/klinikpsikologhicranipekcelik/",
+    mapsUrl:
+      "https://maps.google.com/?q=K%C4%B1n%C4%B1kl%C4%B1%2C%206108.%20Sk.%20No%3A6%20Kat%201%2C%2020190%20Pamukkale%2FDenizli",
+    logo: "/demos/hicran-ipek-celik/logo.png",
+    heroImage: psychologyHeroImage,
+    officeImage:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    primaryColor: "#5b4266",
+    secondaryColor: "#f4eef6",
+    accentColor: "#9bab9c",
+    therapyAreas: [
+      {
+        title: "Bireysel Terapi",
+        description:
+          "Duygusal zorlanmalar, kaygı, stres ve yaşam geçişleri için güvenli bir görüşme alanı.",
+      },
+      {
+        title: "Kaygı ve Stres",
+        description:
+          "Gündelik yaşamı etkileyen kaygı döngülerini anlamaya ve düzenlemeye yönelik destek.",
+      },
+      {
+        title: "İlişki Süreçleri",
+        description:
+          "İletişim, sınırlar ve tekrar eden ilişki kalıpları üzerine yapılandırılmış çalışma.",
+      },
+      {
+        title: "Online Görüşme",
+        description:
+          "Gizlilik ve süreklilik odağıyla online danışmanlık seçeneği.",
+      },
+    ],
+    approachText:
+      "Danışanın ihtiyaçlarını ve sınırlarını gözeten; güven, etik çerçeve ve düzenli takip üzerine kurulu bir danışmanlık yaklaşımı öne çıkarılır.",
+    biography:
+      "Uzm. Kl. Psk. Hicran İpek Çelik için hazırlanan bu demo profil alanı; uzmanın çalışma yaklaşımını, görüşme sürecini ve danışanla kurduğu profesyonel çerçeveyi anlatmak için düzenlenmiştir.",
+    testimonials: [
+      {
+        name: "Danışan Yorumu",
+        comment:
+          "Sayfada iletişim bilgileri, çalışma alanları ve randevu adımları sade şekilde görülüyor.",
+      },
+      {
+        name: "Örnek Danışan",
+        comment:
+          "Uzmanın yaklaşımını ve görüşme seçeneklerini hızlıca anlamak güven veriyor.",
+      },
+      {
+        name: "Online Görüşme",
+        comment:
+          "Mobilde okunabilir, sakin ve profesyonel bir deneyim sunuyor.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "10:00 - 19:00" },
+      { day: "Cumartesi", hours: "10:00 - 14:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    sessionTypes: ["Bireysel terapi", "Online görüşme", "Ön görüşme"],
+    seoTitle: "Hicran İpek Çelik Psikolog Demo Web Sitesi",
+    seoDescription:
+      "Uzm. Kl. Psk. Hicran İpek Çelik için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
 } satisfies Record<string, PsychologistDemo>;
 

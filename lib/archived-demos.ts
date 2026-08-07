@@ -1,9 +1,9 @@
-const archivedDentalDemoSlugs = new Set([
-  "alp-dis",
-  "mustafa-resul-basgun",
-]);
+const archivedDentalDemoSlugs = new Set(["alp-dis", "mustafa-resul-basgun"]);
 
-const archivedPsychologistDemoSlugs = new Set(["nigda-durmaz"]);
+const archivedPsychologistDemoSlugs = new Set([
+  "nigda-durmaz",
+  "cansel-herken",
+]);
 
 export function isArchivedDentalDemo(slug: string): boolean {
   return archivedDentalDemoSlugs.has(slug);

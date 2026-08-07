@@ -300,6 +300,81 @@ export const psychologists = {
     seoDescription:
       "Uzm. Kl. Psk. Hicran İpek Çelik için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
+  "nigda-durmaz": {
+    slug: "nigda-durmaz",
+    practiceName: "Nigda Durmaz Psikoloji",
+    psychologistName: "Psk. Nigda Durmaz",
+    title: "Sakin, güvenli ve danışanı merkeze alan psikolojik destek",
+    description:
+      "Psk. Nigda Durmaz için hazırlanan bu demo; danışanların çalışma alanlarını incelemesini, iletişim bilgilerine ulaşmasını ve randevu adımına kolayca geçmesini sağlar.",
+    phone: "+90 537 346 31 58",
+    whatsapp: "+90 537 346 31 58",
+    email: "demo@denizgokbudak.com",
+    address:
+      "Sırakapılar Mahallesi 1531 Sokak Şahlan Apartmanı No:2 Kat:1 Daire:1",
+    instagramUrl: "https://www.instagram.com/psikolognigdadurmaz/",
+    mapsUrl:
+      "https://maps.google.com/?q=S%C4%B1rakap%C4%B1lar%20Mahallesi%201531%20Sokak%20%C5%9Eahlan%20Apartman%C4%B1%20No%3A2%20Kat%3A1%20Daire%3A1",
+    logo: "/demos/nigda-durmaz/logo.png",
+    heroImage: psychologyHeroImage,
+    officeImage:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    primaryColor: "#4f5b46",
+    secondaryColor: "#f1f4ec",
+    accentColor: "#b4a07d",
+    therapyAreas: [
+      {
+        title: "Bireysel Danışmanlık",
+        description:
+          "Duygusal zorlanmalar, stres ve yaşam geçişleri için güvenli bir görüşme alanı.",
+      },
+      {
+        title: "Kaygı ve Stres",
+        description:
+          "Kaygı döngülerini anlamaya, düzenlemeye ve günlük yaşamı rahatlatmaya yönelik destek.",
+      },
+      {
+        title: "İlişki ve İletişim",
+        description:
+          "Sınırlar, iletişim ve tekrar eden ilişki kalıpları üzerine yapılandırılmış çalışma.",
+      },
+      {
+        title: "Online Görüşme",
+        description:
+          "Gizlilik ve süreklilik odağıyla online psikolojik danışmanlık seçeneği.",
+      },
+    ],
+    approachText:
+      "Danışanın ihtiyaçlarını, sınırlarını ve yaşam ritmini gözeten; güven, etik çerçeve ve anlaşılır süreç yönetimi üzerine kurulu bir yaklaşım öne çıkarılır.",
+    biography:
+      "Psk. Nigda Durmaz için hazırlanan bu demo profil alanı; uzmanın çalışma yaklaşımını, danışanla kurduğu profesyonel çerçeveyi ve görüşme sürecinin nasıl ilerlediğini anlatmak için düzenlenmiştir.",
+    testimonials: [
+      {
+        name: "Danışan Yorumu",
+        comment:
+          "Sayfa sade, güven veren ve iletişim adımlarını hızlıca görünür kılıyor.",
+      },
+      {
+        name: "Örnek Danışan",
+        comment:
+          "Çalışma alanları ve randevu aksiyonları net şekilde aktarılmış.",
+      },
+      {
+        name: "Online Görüşme",
+        comment:
+          "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "10:00 - 19:00" },
+      { day: "Cumartesi", hours: "10:00 - 14:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    sessionTypes: ["Bireysel danışmanlık", "Online görüşme", "Ön görüşme"],
+    seoTitle: "Nigda Durmaz Psikolog Demo Web Sitesi",
+    seoDescription:
+      "Psk. Nigda Durmaz için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
+  },
 } satisfies Record<string, PsychologistDemo>;
 
 export type PsychologistSlug = keyof typeof psychologists;

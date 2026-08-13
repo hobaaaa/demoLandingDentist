@@ -3,6 +3,8 @@ const archivedDentalDemoSlugs = new Set(["alp-dis", "mustafa-resul-basgun"]);
 const archivedPsychologistDemoSlugs = new Set([
   "nigda-durmaz",
   "cansel-herken",
+  "sultan-dailli",
+  "hicran-ipek-celik",
 ]);
 
 export function isArchivedDentalDemo(slug: string): boolean {

@@ -6,22 +6,20 @@ export const psychologists = {
   genel: {
     slug: "genel",
     practiceName: "DG Psikoloji Demo Merkezi",
-    psychologistName: "Uzm. Kl. Psk. Elif Yıldız",
+    psychologistName: "Uzm. Kl. Psk. Elif Y.",
     title: "Güvenli, sakin ve profesyonel bir psikolojik danışmanlık deneyimi",
     description:
       "Psikologlar için hazırlanmış bu demo; danışanların uzmanı tanımasını, çalışma alanlarını görmesini ve randevu talebini kolayca iletmesini sağlar.",
-    phone: "+90 555 222 33 44",
-    whatsapp: "+90 555 222 33 44",
+    phone: "+90 553 666 23 53",
+    whatsapp: "+90 553 666 23 53",
     email: "demo@denizgokbudak.com",
-    address: "Merkez Mah. Terapi Sok. No:10, İstanbul",
+    address: "Değirmenönü Mh. 1739 Sk. No:18 Daire:7",
     instagramUrl: "https://www.instagram.com/",
     mapsUrl: "https://maps.google.com/?q=Istanbul",
     logo: "/demos/default/logo.png",
     heroImage: psychologyHeroImage,
     officeImage:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
-    profileImage:
-      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85",
     primaryColor: "#59755e",
     secondaryColor: "#eef6ec",
     accentColor: "#b88768",
@@ -50,7 +48,7 @@ export const psychologists = {
     approachText:
       "Danışanın hızını, sınırlarını ve ihtiyaçlarını gözeten; açık, sakin ve güvenli bir görüşme deneyimi sunan profesyonel bir yaklaşım vurgulanır.",
     biography:
-      "Uzm. Kl. Psk. Elif Yıldız örnek bir demo profilidir. Bu alan; uzmanın eğitimini, çalışma yaklaşımını, terapi ekollerini ve danışanla kurduğu profesyonel çerçeveyi anlatmak için kullanılır.",
+      "Uzm. Kl. Psk. Elif Y. örnek bir demo profilidir. Bu alan; uzmanın eğitimini, çalışma yaklaşımını, terapi ekollerini ve danışanla kurduğu profesyonel çerçeveyi anlatmak için kullanılır.",
     testimonials: [
       {
         name: "Danışan Yorumu",
@@ -77,80 +75,6 @@ export const psychologists = {
     seoTitle: "Genel Psikolog Web Sitesi Demosu | DG Digital",
     seoDescription:
       "DG Digital tarafından hazırlanmış genel psikolog web sitesi demosu.",
-  },
-  "elif-yildiz": {
-    slug: "elif-yildiz",
-    practiceName: "Elif Yıldız Psikolojik Danışmanlık",
-    psychologistName: "Uzm. Kl. Psk. Elif Yıldız",
-    title: "Kaygı, stres ve ilişki süreçlerinde güvenli danışmanlık alanı",
-    description:
-      "Elif Yıldız için hazırlanmış kişiselleştirilmiş psikolog demo sayfası; uzmanlık alanları, yaklaşım, seans türleri ve iletişim aksiyonlarını tek akışta toplar.",
-    phone: "+90 532 100 20 30",
-    whatsapp: "+90 532 100 20 30",
-    email: "iletisim@elifyildizdemo.com",
-    address: "Alsancak Mah. Danışmanlık Cad. No:18, İzmir",
-    instagramUrl: "https://www.instagram.com/",
-    mapsUrl: "https://maps.google.com/?q=Izmir",
-    logo: "/demos/default/logo.png",
-    heroImage: psychologyHeroImage,
-    officeImage:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=85",
-    profileImage:
-      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85",
-    primaryColor: "#6f7d5d",
-    secondaryColor: "#f3f7ef",
-    accentColor: "#c08a67",
-    therapyAreas: [
-      {
-        title: "Kaygı ve Stres",
-        description:
-          "Gündelik yaşamı zorlaştıran kaygı döngülerini anlamaya ve düzenlemeye odaklı süreç.",
-      },
-      {
-        title: "İlişki Problemleri",
-        description:
-          "Sınırlar, iletişim ve tekrarlayan ilişki kalıpları üzerine yapılandırılmış çalışma.",
-      },
-      {
-        title: "Özgüven Çalışmaları",
-        description:
-          "Kendilik algısı, karar verme ve duygusal dayanıklılık alanlarında destek.",
-      },
-      {
-        title: "Online Terapi",
-        description:
-          "Düzenli takip ve güvenli görüşme çerçevesiyle online danışmanlık seçeneği.",
-      },
-    ],
-    approachText:
-      "Danışanla kurulan güvenli ilişki, etik sınırlar, gizlilik ve düzenli takip bu demo sayfasının ana mesajını oluşturur.",
-    biography:
-      "Uzm. Kl. Psk. Elif Yıldız demo profilinde yetişkinlerle bireysel terapi, kaygı ve ilişki süreçleri odağa alınmıştır. Bu metin gerçek uzman bilgileriyle kolayca değiştirilebilir.",
-    testimonials: [
-      {
-        name: "A. K.",
-        comment:
-          "Süreç hakkında net bilgi almak ve hızlıca iletişime geçebilmek güven verdi.",
-      },
-      {
-        name: "M. S.",
-        comment:
-          "Uzmanın çalışma alanları ve seans seçenekleri çok anlaşılır aktarılmış.",
-      },
-      {
-        name: "D. Y.",
-        comment: "Mobilde sade, profesyonel ve sakin bir deneyim sunuyor.",
-      },
-    ],
-    workingHours: [
-      { day: "Pazartesi - Cuma", hours: "11:00 - 19:00" },
-      { day: "Cumartesi", hours: "10:00 - 13:00" },
-      { day: "Pazar", hours: "Kapalı" },
-    ],
-    sessionTypes: ["Bireysel terapi", "Online terapi", "Çift danışmanlığı"],
-    seoTitle: "Elif Yıldız Psikolog Demo Web Sitesi",
-    seoDescription:
-      "Elif Yıldız için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
   "sultan-dailli": {
     slug: "sultan-dailli",
@@ -507,8 +431,7 @@ export const psychologists = {
       },
       {
         name: "Online Görüşme",
-        comment:
-          "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
+        comment: "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
       },
     ],
     workingHours: [
@@ -580,8 +503,7 @@ export const psychologists = {
       },
       {
         name: "Online Görüşme",
-        comment:
-          "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
+        comment: "Mobilde okunabilir ve profesyonel bir deneyim sunuyor.",
       },
     ],
     workingHours: [

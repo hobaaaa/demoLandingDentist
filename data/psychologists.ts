@@ -373,6 +373,79 @@ export const psychologists = {
     seoDescription:
       "Psk. Deniz Tosuner için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
   },
+  "gamze-akkas": {
+    slug: "gamze-akkas",
+    practiceName: "Gamze Akkaş Psikoloji",
+    psychologistName: "Psk. Gamze Akkaş",
+    title: "Sakin, güvenli ve kişiye özel psikolojik danışmanlık alanı",
+    description:
+      "Psk. Gamze Akkaş için hazırlanan bu demo; danışanların çalışma alanlarını incelemesini, uzmanı tanımasını ve randevu adımına kolayca geçmesini sağlar.",
+    phone: "+90 537 876 20 77",
+    whatsapp: "+90 537 876 20 77",
+    email: "demo@denizgokbudak.com",
+    address: "Pamukkale / Denizli",
+    instagramUrl: "https://www.instagram.com/psk.gamzeakkas/",
+    mapsUrl: "https://maps.google.com/?q=Pamukkale%20Denizli",
+    logo: "/demos/default/logo.png",
+    heroImage: psychologyHeroImage,
+    officeImage:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    primaryColor: "#4d604f",
+    secondaryColor: "#eef6ec",
+    accentColor: "#b89a78",
+    therapyAreas: [
+      {
+        title: "Bireysel Danışmanlık",
+        description:
+          "Duygusal zorlanmalar, yaşam geçişleri ve kişisel farkındalık süreçleri için güvenli görüşme alanı.",
+      },
+      {
+        title: "Kaygı ve Stres",
+        description:
+          "Gündelik yaşamı zorlaştıran kaygı ve stres döngülerini anlamaya yönelik yapılandırılmış destek.",
+      },
+      {
+        title: "İlişki ve İletişim",
+        description:
+          "Sınırlar, iletişim ve tekrar eden ilişki kalıpları üzerine sakin ve anlaşılır bir çalışma süreci.",
+      },
+      {
+        title: "Online Görüşme",
+        description:
+          "Yoğun programlara uyum sağlayan, gizlilik ve süreklilik odaklı online danışmanlık seçeneği.",
+      },
+    ],
+    approachText:
+      "Danışanın ihtiyaçlarını, sınırlarını ve yaşam ritmini gözeten; etik çerçeve, gizlilik ve güven duygusu üzerine kurulu bir danışmanlık yaklaşımı vurgulanır.",
+    biography:
+      "Psk. Gamze Akkaş için hazırlanan bu demo profil alanı; uzmanı tanıtmak, görüşme sürecinin nasıl ilerlediğini anlatmak ve danışanın ilk adımı daha rahat atmasını sağlamak için düzenlenmiştir.",
+    testimonials: [
+      {
+        name: "Danışan Yorumu",
+        comment:
+          "Sayfada süreç, iletişim ve randevu adımları sade şekilde görünüyor. Güven veren sakin bir izlenim oluşturuyor.",
+      },
+      {
+        name: "Örnek Danışan",
+        comment:
+          "Çalışma alanlarını ve görüşme seçeneklerini hızlıca görmek karar vermeyi kolaylaştırıyor.",
+      },
+      {
+        name: "Online Görüşme",
+        comment:
+          "Mobilde rahat okunuyor ve iletişim aksiyonlarına kolayca ulaşılabiliyor.",
+      },
+    ],
+    workingHours: [
+      { day: "Pazartesi - Cuma", hours: "10:00 - 19:00" },
+      { day: "Cumartesi", hours: "10:00 - 14:00" },
+      { day: "Pazar", hours: "Kapalı" },
+    ],
+    sessionTypes: ["Bireysel danışmanlık", "Online görüşme", "Ön görüşme"],
+    seoTitle: "Gamze Akkaş Psikolog Demo Web Sitesi",
+    seoDescription:
+      "Psk. Gamze Akkaş için hazırlanmış kişiselleştirilmiş psikolog demo sayfası.",
+  },
   "nigda-durmaz": {
     slug: "nigda-durmaz",
     practiceName: "Nigda Durmaz Psikoloji",

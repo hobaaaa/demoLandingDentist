@@ -1,6 +1,9 @@
 const archivedDentalDemoSlugs = new Set(["alp-dis", "mustafa-resul-basgun"]);
 
 const archivedPsychologistDemoSlugs = new Set([
+  "elif-yildiz",
+  "deniz-tosuner",
+  "gamze-akkas",
   "nigda-durmaz",
   "cansel-herken",
   "sultan-dailli",
